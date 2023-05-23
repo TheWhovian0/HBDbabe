@@ -1,0 +1,410 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.back-button:hover {
+  background-color: #555;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+body{
+  background: #010b1a;
+  min-height: 100vh;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  color: #f0f885;
+  text-shadow: 0 0 10px #f0f885, 0 0 20px #f0f885, 0 0 30px #fffc4b, 0 0 40px #fffc4b, 0 0 70px #fffc4b;
+  animation: flicker 2s infinite alternate;
+}
+
+.bubbles{
+  position: relative;
+  display: flex;
+}
+
+
+.bubbles span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #8c8e8f44, 
+  0 0 50px #ffffff, 
+  0 0 100px #ffffff;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+  background: #2dbcff;
+  box-shadow: 0 0 0 10px #2586b3, 
+  0 0 50px #2dbcff, 
+  0 0 100px #2dbcff;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(100vh) scale(0);
+  }
+  100%{
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+.container .neon1{
+  font-size: 30px;
+  position: relative;
+  top:0px;
+  left: 1500px;
+  height: 40px;
+  width: 200px;
+
+}
+
+.container .neon2{
+  font-size: 40px;
+  position: relative;
+  top:0px;
+  left: 200px;
+  height: 40px;
+  width: 400px;
+}
+
+.container .neon3{
+  font-size: 50px;
+  position: relative;
+  top:-19px;
+  left: 1000px;
+  height: 40px;
+  width: 500px;
+}
+
+.container .neon4{
+  font-size: 50px;
+  position: relative;
+  top:0px;
+  left: 100px;
+  height: 40px;
+  width: 1000px;
+}
+
+.container .neon5{
+  font-size: 42px;
+  position: relative;
+  top:0px;
+  left: 1100px;
+  height: 40px;
+  width: 1100px;
+}
+
+.container .neon6{
+  font-size: 50px;
+  position: relative;
+  top:0px;
+  left: 100px;
+  height: 40px;
+  width: 250px;
+}
+
+.container .neon7{
+  font-size: 50px;
+  position: relative;
+  top:0px;
+  left: 600px;
+  height: 40px;
+  width: 500px;
+}
+
+.container .neon8{
+  font-size: 50px;
+  position: relative;
+  top:0px;
+  left: 1250px;
+  height: 40px;
+  width: 600px;
+}
+
+.container .neon9{
+  font-size: 70px;
+  position: relative;
+  top:10px;
+  left: 1000px;
+  height: 40px;
+  width: 600px;
+}
+
+.container .neon10{
+  font-size: 50px;
+  position: relative;
+  top:-0px;
+  left: 100px;
+  height: 40px;
+  width: 800px;
+}
+
+.container .neon11{
+  font-size: 50px;
+  position: relative;
+  top:40px;
+  left: 240px;
+  height: 40px;
+  width: 200px;
+}
+
+.container .neon12{
+  font-size: 50px;
+  position: relative;
+  top:-0px;
+  left: 800px;
+  height: 80px;
+  width: 1050px;
+}
+
+.container .neon13{
+  font-size: 50px;
+  position: relative;
+  top:-0px;
+  left: 400px;
+  height: 40px;
+  width: 400px;
+}
+
+.container .neon14{
+  font-size: 50px;
+  position: relative;
+  top:-0px;
+  left: 100px;
+  height: 40px;
+  width: 300px;
+}
+
+.container .neon15{
+  font-size: 50px;
+  position: relative;
+  top:-0px;
+  left: 800px;
+  height: 40px;
+  width: 1000px;
+}
+
+.container .neon16{
+  font-size: 50px;
+  position: relative;
+  top: 100px;
+  left: 50px;
+  height: 40px;
+  width: 300px;
+}
+
+.container .neon17{
+  font-size: 50px;
+  position: relative;
+  top: -5px;
+  left: 1500px;
+  height: 40px;
+  width: 350px;
+}
+
+.container .neon18{
+  font-size: 50px;
+  position: relative;
+  top: -60px;
+  left: 600px;
+  height: 40px;
+  width: 730px;
+}
+
+.container .neon19{
+  font-size: 50px;
+  position: relative;
+  top: 70px;
+  left: 400px;
+  height: 40px;
+  width: 300px;
+}
+
+.container .neon20{
+  font-size: 50px;
+  position: relative;
+  top: 60px;
+  left: 1400px;
+  height: 40px;
+  width: 600px;
+}
+
+.container .neon21{
+  font-size: 50px;
+  position: relative;
+  top: -90px;
+  left: 900px;
+  height: 40px;
+  width: 600px;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+.container .neon1:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon2:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon3:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+
+.container .neon4:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+
+.container .neon5:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+
+.container .neon6:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+
+.container .neon7:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+
+.container .neon8:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+
+.container .neon9:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+
+.container .neon10:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+.container .neon11:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon12:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon13:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon14:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon15:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon16:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon17:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon18:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon19:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon20:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
+
+.container .neon21:hover {
+
+  color: #ffffff;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white;
+}
