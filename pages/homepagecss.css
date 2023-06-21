@@ -16,7 +16,7 @@ body{
 .container {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),transparent),url();
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),transparent),url(pages/homepageimg/background-brightcupcake.jpg);
     background-size: cover;
     background-position: center;
     padding: 0 8%;
